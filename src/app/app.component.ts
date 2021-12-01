@@ -7,8 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   categoriasOpcoes: any[] = [
-    { alias: 'cat-1', label: 'Categoria 1' },
-    { alias: 'cat-2', label: 'Categoria 2' },
-    { alias: 'cat-3', label: 'Categoria 3' },
+    { alias: 'bota', label: 'Botas' },
+    { alias: 'calcado-com-cordoes', label: 'Calçados com Cordões' },
+    { alias: 'mocassim', label: 'Mocassins' },
+    { alias: 'monge', label: 'Monges' },
+    { alias: 'mula', label: 'Mulas' },
+
+    { alias: 'escarpim', label: 'Escarpins' },
+    { alias: 'sandalia', label: 'Sandálias' },
+    { alias: 'soco', label: 'Socos' },
+    { alias: 'tenis', label: 'Tênis' },
+    { alias: 'sapatenis', label: 'Sapatênis' },
   ];
 }

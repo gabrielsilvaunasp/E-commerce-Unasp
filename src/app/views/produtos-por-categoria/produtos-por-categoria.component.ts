@@ -10,13 +10,20 @@ import { Produto } from 'src/app/models/produto_model';
 })
 export class ProdutosPorCategoriaComponent implements OnInit {
   produtosFiltrados: Produto[];
+  categoria: string;
 
   constructor(public rota: ActivatedRoute) {
     this.produtosFiltrados = [];
+    this.categoria = '';
+
     this.rota.params.subscribe((data) => {
       this.produtosFiltrados = produtosMock.filter(
         (produtoMock) => produtoMock.categoria == data['categoria']
       );
+    });
+
+    this.rota.queryParamMap.subscribe((params) => {
+      this.categoria = params.get('label')!;
     });
   }
 
