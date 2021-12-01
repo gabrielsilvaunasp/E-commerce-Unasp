@@ -8,9 +8,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { ProdutosPorCategoriaComponent } from './views/produtos-por-categoria/produtos-por-categoria.component';
+import { ProdutoComponent } from './components/produto/produto.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, ProdutosPorCategoriaComponent, ProdutoComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

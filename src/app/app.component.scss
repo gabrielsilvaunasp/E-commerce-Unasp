@@ -11,6 +11,14 @@ header {
     font-weight: 900;
     letter-spacing: 2px;
   }
+
+  h1:hover {
+    cursor: pointer;
+  }
+}
+
+div, mat-drawer-container {
+  height: 100%;
 }
 
 mat-drawer {

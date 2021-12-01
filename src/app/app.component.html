@@ -1,13 +1,14 @@
 <header>
-  <h1>E-Commerce do Gabriel</h1>
+  <h1 [routerLink]="['']">E-Commerce do Gabriel</h1>
 </header>
 
 <div>
-  <mat-drawer-container class="example-container">
+  <mat-drawer-container>
     <mat-drawer mode="side" opened>
       <mat-selection-list #categorias [multiple]="false">
-        <mat-list-option *ngFor="let categoria of categoriasOpcoes"  [value]="categoria" (click)="filtrarPorCategoria(categoria)">
-          {{categoria}}
+        <mat-list-option *ngFor="let categoria of categoriasOpcoes" [value]="categoria"
+          [routerLink]="['categoria/' + categoria['alias']]">
+          {{categoria['label']}}
         </mat-list-option>
       </mat-selection-list>
     </mat-drawer>
