@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ecommerce';
+  categoriasOpcoes: string[] = ["Categoria 1", "Categoria 2", "Categoria 3"]
+
+  filtrarPorCategoria(categoria: any){
+    // teste
+    console.log(categoria)
+  }
 }
